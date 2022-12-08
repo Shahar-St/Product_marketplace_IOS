@@ -8,17 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		57AF30822940F98D00C11047 /* Product_MarketplaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF30812940F98D00C11047 /* Product_MarketplaceApp.swift */; };
-		57AF30842940F98D00C11047 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF30832940F98D00C11047 /* ContentView.swift */; };
 		57AF30862940F98D00C11047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AF30852940F98D00C11047 /* Assets.xcassets */; };
 		57AF30892940F98D00C11047 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AF30882940F98D00C11047 /* Preview Assets.xcassets */; };
+		57AF30942940FACB00C11047 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 57AF30922940FACB00C11047 /* amplifyconfiguration.json */; };
+		57AF30952940FACB00C11047 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 57AF30932940FACB00C11047 /* awsconfiguration.json */; };
+		57AF30972940FB3D00C11047 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF30962940FB3D00C11047 /* LoginView.swift */; };
+		57AF30992940FC4600C11047 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF30982940FC4600C11047 /* SignUpView.swift */; };
+		57AF309B2940FC8A00C11047 /* ConfirmSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF309A2940FC8A00C11047 /* ConfirmSignUpView.swift */; };
+		57AF34532941FF3A00C11047 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34502941FF3A00C11047 /* User.swift */; };
+		57AF34542941FF3A00C11047 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34512941FF3A00C11047 /* User+Schema.swift */; };
+		57AF34552941FF3A00C11047 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34522941FF3A00C11047 /* AmplifyModels.swift */; };
+		57AF34EC29420D9E00C11047 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34EB29420D9E00C11047 /* ContentView.swift */; };
+		57AF34F52942102C00C11047 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34F42942102C00C11047 /* UserState.swift */; };
+		57AF34F72942109300C11047 /* MarketplaceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34F62942109300C11047 /* MarketplaceError.swift */; };
+		57AF34F9294210E300C11047 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34F8294210E300C11047 /* SessionView.swift */; };
+		57AF34FF2942151E00C11047 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF34FE2942151E00C11047 /* AvatarView.swift */; };
+		57AF35122942216A00C11047 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 57AF35112942216A00C11047 /* Amplify */; };
+		57AF35142942216A00C11047 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 57AF35132942216A00C11047 /* AWSCognitoAuthPlugin */; };
+		57AF35162942216A00C11047 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 57AF35152942216A00C11047 /* AWSDataStorePlugin */; };
+		57AF35182942218700C11047 /* AmplifyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF35172942218700C11047 /* AmplifyImage.swift */; };
+		57AF351A294221B000C11047 /*  AmplifyImageProvider.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF3519294221B000C11047 /*  AmplifyImageProvider.swift .swift */; };
+		57AF351C294221C600C11047 /*  KFImage+Extensions.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF351B294221C600C11047 /*  KFImage+Extensions.swift .swift */; };
+		57AF351E294221DB00C11047 /*  Source+Extensions.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF351D294221DB00C11047 /*  Source+Extensions.swift .swift */; };
+		57AF35212942221900C11047 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 57AF35202942221900C11047 /* Kingfisher */; };
+		57AF3523294222E100C11047 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF3522294222E100C11047 /* UserProfileView.swift */; };
+		57AF35252942258800C11047 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF35242942258800C11047 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57AF307E2940F98D00C11047 /* Product Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product Marketplace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AF30812940F98D00C11047 /* Product_MarketplaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_MarketplaceApp.swift; sourceTree = "<group>"; };
-		57AF30832940F98D00C11047 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57AF30852940F98D00C11047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AF30882940F98D00C11047 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57AF30922940FACB00C11047 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		57AF30932940FACB00C11047 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		57AF30962940FB3D00C11047 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		57AF30982940FC4600C11047 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		57AF309A2940FC8A00C11047 /* ConfirmSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpView.swift; sourceTree = "<group>"; };
+		57AF34502941FF3A00C11047 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		57AF34512941FF3A00C11047 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		57AF34522941FF3A00C11047 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		57AF34EB29420D9E00C11047 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../.Trashes/1024371481/ContentView.swift; sourceTree = "<group>"; };
+		57AF34F42942102C00C11047 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		57AF34F62942109300C11047 /* MarketplaceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceError.swift; sourceTree = "<group>"; };
+		57AF34F8294210E300C11047 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		57AF34FE2942151E00C11047 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		57AF35172942218700C11047 /* AmplifyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyImage.swift; sourceTree = "<group>"; };
+		57AF3519294221B000C11047 /*  AmplifyImageProvider.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " AmplifyImageProvider.swift .swift"; sourceTree = "<group>"; };
+		57AF351B294221C600C11047 /*  KFImage+Extensions.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " KFImage+Extensions.swift .swift"; sourceTree = "<group>"; };
+		57AF351D294221DB00C11047 /*  Source+Extensions.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Source+Extensions.swift .swift"; sourceTree = "<group>"; };
+		57AF3522294222E100C11047 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		57AF35242942258800C11047 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF35212942221900C11047 /* Kingfisher in Frameworks */,
+				57AF35162942216A00C11047 /* AWSDataStorePlugin in Frameworks */,
+				57AF35122942216A00C11047 /* Amplify in Frameworks */,
+				57AF35142942216A00C11047 /* AWSCognitoAuthPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +81,7 @@
 			children = (
 				57AF30802940F98D00C11047 /* Product Marketplace */,
 				57AF307F2940F98D00C11047 /* Products */,
+				57AF309C2940FF4400C11047 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +96,21 @@
 		57AF30802940F98D00C11047 /* Product Marketplace */ = {
 			isa = PBXGroup;
 			children = (
+				57AF34FD294214FF00C11047 /* Login */,
+				57AF34EB29420D9E00C11047 /* ContentView.swift */,
 				57AF30812940F98D00C11047 /* Product_MarketplaceApp.swift */,
-				57AF30832940F98D00C11047 /* ContentView.swift */,
-				57AF30852940F98D00C11047 /* Assets.xcassets */,
+				57AF34F42942102C00C11047 /* UserState.swift */,
+				57AF34F8294210E300C11047 /* SessionView.swift */,
+				57AF34F62942109300C11047 /* MarketplaceError.swift */,
+				57AF34FE2942151E00C11047 /* AvatarView.swift */,
+				57AF3522294222E100C11047 /* UserProfileView.swift */,
+				57AF35242942258800C11047 /* MainTabView.swift */,
+				57AF35102942213500C11047 /* AmplifyImage */,
+				57AF344F2941FF3A00C11047 /* models */,
+				57AF30922940FACB00C11047 /* amplifyconfiguration.json */,
+				57AF30932940FACB00C11047 /* awsconfiguration.json */,
 				57AF30872940F98D00C11047 /* Preview Content */,
+				57AF30852940F98D00C11047 /* Assets.xcassets */,
 			);
 			path = "Product Marketplace";
 			sourceTree = "<group>";
@@ -65,6 +121,45 @@
 				57AF30882940F98D00C11047 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57AF309C2940FF4400C11047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57AF344F2941FF3A00C11047 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				57AF34502941FF3A00C11047 /* User.swift */,
+				57AF34512941FF3A00C11047 /* User+Schema.swift */,
+				57AF34522941FF3A00C11047 /* AmplifyModels.swift */,
+			);
+			name = models;
+			path = amplify/generated/models;
+			sourceTree = SOURCE_ROOT;
+		};
+		57AF34FD294214FF00C11047 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				57AF30962940FB3D00C11047 /* LoginView.swift */,
+				57AF30982940FC4600C11047 /* SignUpView.swift */,
+				57AF309A2940FC8A00C11047 /* ConfirmSignUpView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		57AF35102942213500C11047 /* AmplifyImage */ = {
+			isa = PBXGroup;
+			children = (
+				57AF35172942218700C11047 /* AmplifyImage.swift */,
+				57AF3519294221B000C11047 /*  AmplifyImageProvider.swift .swift */,
+				57AF351B294221C600C11047 /*  KFImage+Extensions.swift .swift */,
+				57AF351D294221DB00C11047 /*  Source+Extensions.swift .swift */,
+			);
+			path = AmplifyImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +178,12 @@
 			dependencies = (
 			);
 			name = "Product Marketplace";
+			packageProductDependencies = (
+				57AF35112942216A00C11047 /* Amplify */,
+				57AF35132942216A00C11047 /* AWSCognitoAuthPlugin */,
+				57AF35152942216A00C11047 /* AWSDataStorePlugin */,
+				57AF35202942221900C11047 /* Kingfisher */,
+			);
 			productName = "Product Marketplace";
 			productReference = 57AF307E2940F98D00C11047 /* Product Marketplace.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +212,10 @@
 				Base,
 			);
 			mainGroup = 57AF30752940F98D00C11047;
+			packageReferences = (
+				57AF350829421A7700C11047 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				57AF351F2942221900C11047 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 57AF307F2940F98D00C11047 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF30952940FACB00C11047 /* awsconfiguration.json in Resources */,
 				57AF30892940F98D00C11047 /* Preview Assets.xcassets in Resources */,
+				57AF30942940FACB00C11047 /* amplifyconfiguration.json in Resources */,
 				57AF30862940F98D00C11047 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +244,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF30842940F98D00C11047 /* ContentView.swift in Sources */,
+				57AF34F9294210E300C11047 /* SessionView.swift in Sources */,
+				57AF351E294221DB00C11047 /*  Source+Extensions.swift .swift in Sources */,
+				57AF34FF2942151E00C11047 /* AvatarView.swift in Sources */,
+				57AF34F52942102C00C11047 /* UserState.swift in Sources */,
+				57AF30992940FC4600C11047 /* SignUpView.swift in Sources */,
+				57AF34542941FF3A00C11047 /* User+Schema.swift in Sources */,
+				57AF34EC29420D9E00C11047 /* ContentView.swift in Sources */,
+				57AF34F72942109300C11047 /* MarketplaceError.swift in Sources */,
+				57AF30972940FB3D00C11047 /* LoginView.swift in Sources */,
+				57AF309B2940FC8A00C11047 /* ConfirmSignUpView.swift in Sources */,
+				57AF3523294222E100C11047 /* UserProfileView.swift in Sources */,
+				57AF35252942258800C11047 /* MainTabView.swift in Sources */,
+				57AF35182942218700C11047 /* AmplifyImage.swift in Sources */,
+				57AF34532941FF3A00C11047 /* User.swift in Sources */,
+				57AF351C294221C600C11047 /*  KFImage+Extensions.swift .swift in Sources */,
 				57AF30822940F98D00C11047 /* Product_MarketplaceApp.swift in Sources */,
+				57AF351A294221B000C11047 /*  AmplifyImageProvider.swift .swift in Sources */,
+				57AF34552941FF3A00C11047 /* AmplifyModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +460,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57AF350829421A7700C11047 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		57AF351F2942221900C11047 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57AF35112942216A00C11047 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57AF350829421A7700C11047 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		57AF35132942216A00C11047 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57AF350829421A7700C11047 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		57AF35152942216A00C11047 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57AF350829421A7700C11047 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		57AF35202942221900C11047 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57AF351F2942221900C11047 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57AF30762940F98D00C11047 /* Project object */;
 }
