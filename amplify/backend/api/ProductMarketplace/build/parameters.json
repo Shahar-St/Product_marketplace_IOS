@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "ProductMarketplace",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-productmarketplace-staging-160457-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/d5cbd474a487e6daa205fb7a8d5de0992097a12e"
+}

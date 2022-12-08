@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-productmarketplace-staging-160457-authRole",
+      "UnauthRoleArn": "arn:aws:iam::114644576002:role/amplify-productmarketplace-staging-160457-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::114644576002:role/amplify-productmarketplace-staging-160457-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-productmarketplace-staging-160457-deployment",
+      "UnauthRoleName": "amplify-productmarketplace-staging-160457-unauthRole",
+      "StackName": "amplify-productmarketplace-staging-160457",
+      "StackId": "arn:aws:cloudformation:us-east-1:114644576002:stack/amplify-productmarketplace-staging-160457/e5c2b8a0-7648-11ed-90e8-0a4fdccaeee7",
+      "AmplifyAppId": "d2yayrf1044g80"
+    },
+    "categories": {
+      "auth": {
+        "ProductMarketplace": {}
+      }
+    }
+  }
+}

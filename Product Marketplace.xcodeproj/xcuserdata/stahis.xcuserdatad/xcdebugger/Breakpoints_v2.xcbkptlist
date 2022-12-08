@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7B7CD666-2CD8-4D6B-9448-970603CCFF31"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E41F5CE0-98B8-4F55-83EB-AFECAB681971"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Product Marketplace/ConfirmSignUpView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "confirmSignUp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E41F5CE0-98B8-4F55-83EB-AFECAB681971 - 9d6a64313f80b534"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Product_Marketplace.ConfirmSignUpView.confirmSignUp() async -&gt; ()"
+                  moduleName = "Product Marketplace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/workplace/Product%20Marketplace/Product%20Marketplace/ConfirmSignUpView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "E41F5CE0-98B8-4F55-83EB-AFECAB681971 - 34a8bf68da0dafc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Product_Marketplace.ConfirmSignUpView.confirmSignUp() async -&gt; ()"
+                  moduleName = "Product Marketplace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/workplace/Product%20Marketplace/Product%20Marketplace/ConfirmSignUpView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "E41F5CE0-98B8-4F55-83EB-AFECAB681971 - f614406dc0169533"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Product_Marketplace.ConfirmSignUpView.confirmSignUp() async -&gt; ()"
+                  moduleName = "Product Marketplace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/workplace/Product%20Marketplace/Product%20Marketplace/ConfirmSignUpView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

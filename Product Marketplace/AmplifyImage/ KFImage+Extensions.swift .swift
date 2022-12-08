@@ -2,6 +2,7 @@ import Kingfisher
 import SwiftUI
 
 extension KFImage {
+    
     public func scaleToFillWidth(aspectRatio: Double = 1) -> some View {
         self.resizable()
             .aspectRatio(contentMode: .fill)
