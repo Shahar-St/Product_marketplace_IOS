@@ -48,12 +48,11 @@
         "IdentityPoolName": "testAuthIdentityPool__staging",
         "UserPoolName": "ProductMarketplace"
       },
-      "lastPushTimeStamp": "2022-12-08T14:12:52.128Z",
+      "lastPushTimeStamp": "2022-12-10T11:39:26.491Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-productmarketplace-staging-160457-deployment/amplify-cfn-templates/auth/ProductMarketplace-cloudformation-template.json",
         "logicalId": "authProductMarketplace"
-      },
-      "lastPushDirHash": "+iRf6/cz+zmP04pllqJ5d/9mmgI="
+      }
     }
   },
   "api": {
@@ -80,11 +79,12 @@
         "GraphQLAPIEndpointOutput": "https://kdkipldcqrhqrnt45537j4lcom.appsync-api.us-east-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-f4hjtle7avefxpmlsjubgqefce"
       },
-      "lastPushTimeStamp": "2022-12-08T14:12:52.070Z",
+      "lastPushTimeStamp": "2022-12-10T11:39:26.543Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-productmarketplace-staging-160457-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiProductMarketplace"
-      }
+      },
+      "lastPushDirHash": "BVRX5FztBq/tc7Dxyl9G8IU+U+Q="
     }
   },
   "storage": {
@@ -92,16 +92,15 @@
       "service": "S3",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
-      "lastPushTimeStamp": "2022-12-08T14:12:52.128Z",
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-productmarketplace-staging-160457-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
-        "logicalId": "storages3productmarketplacestoragea630f6b7"
-      },
       "output": {
         "BucketName": "product-marketplace-storage-a630f6b7160457-staging",
         "Region": "us-east-1"
       },
-      "lastPushDirHash": "Nl2FBg0m7asiNIt/GnPu9sNS/RY="
+      "lastPushTimeStamp": "2022-12-10T11:39:26.494Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-productmarketplace-staging-160457-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3productmarketplacestoragea630f6b7"
+      }
     }
   }
 }

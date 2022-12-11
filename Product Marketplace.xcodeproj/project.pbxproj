@@ -33,6 +33,11 @@
 		57AF35212942221900C11047 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 57AF35202942221900C11047 /* Kingfisher */; };
 		57AF3523294222E100C11047 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF3522294222E100C11047 /* UserProfileView.swift */; };
 		57AF35252942258800C11047 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF35242942258800C11047 /* MainTabView.swift */; };
+		57AF352729422DF400C11047 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 57AF352629422DF400C11047 /* AWSS3StoragePlugin */; };
+		57AF352929422E9C00C11047 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF352829422E9C00C11047 /* ImagePickerView.swift */; };
+		57AF352C2944A7CA00C11047 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF352A2944A7CA00C11047 /* Product.swift */; };
+		57AF352D2944A7CA00C11047 /* Product+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF352B2944A7CA00C11047 /* Product+Schema.swift */; };
+		57AF363229462E1A00C11047 /* GetAndUploadPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF363129462E1A00C11047 /* GetAndUploadPhotos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +64,10 @@
 		57AF351D294221DB00C11047 /*  Source+Extensions.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Source+Extensions.swift .swift"; sourceTree = "<group>"; };
 		57AF3522294222E100C11047 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		57AF35242942258800C11047 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		57AF352829422E9C00C11047 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		57AF352A2944A7CA00C11047 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		57AF352B2944A7CA00C11047 /* Product+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+Schema.swift"; sourceTree = "<group>"; };
+		57AF363129462E1A00C11047 /* GetAndUploadPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAndUploadPhotos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF352729422DF400C11047 /* AWSS3StoragePlugin in Frameworks */,
 				57AF35212942221900C11047 /* Kingfisher in Frameworks */,
 				57AF35162942216A00C11047 /* AWSDataStorePlugin in Frameworks */,
 				57AF35122942216A00C11047 /* Amplify in Frameworks */,
@@ -105,12 +115,14 @@
 				57AF34FE2942151E00C11047 /* AvatarView.swift */,
 				57AF3522294222E100C11047 /* UserProfileView.swift */,
 				57AF35242942258800C11047 /* MainTabView.swift */,
+				57AF352829422E9C00C11047 /* ImagePickerView.swift */,
 				57AF35102942213500C11047 /* AmplifyImage */,
 				57AF344F2941FF3A00C11047 /* models */,
 				57AF30922940FACB00C11047 /* amplifyconfiguration.json */,
 				57AF30932940FACB00C11047 /* awsconfiguration.json */,
 				57AF30872940F98D00C11047 /* Preview Content */,
 				57AF30852940F98D00C11047 /* Assets.xcassets */,
+				57AF363129462E1A00C11047 /* GetAndUploadPhotos.swift */,
 			);
 			path = "Product Marketplace";
 			sourceTree = "<group>";
@@ -133,6 +145,8 @@
 		57AF344F2941FF3A00C11047 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				57AF352A2944A7CA00C11047 /* Product.swift */,
+				57AF352B2944A7CA00C11047 /* Product+Schema.swift */,
 				57AF34502941FF3A00C11047 /* User.swift */,
 				57AF34512941FF3A00C11047 /* User+Schema.swift */,
 				57AF34522941FF3A00C11047 /* AmplifyModels.swift */,
@@ -183,6 +197,7 @@
 				57AF35132942216A00C11047 /* AWSCognitoAuthPlugin */,
 				57AF35152942216A00C11047 /* AWSDataStorePlugin */,
 				57AF35202942221900C11047 /* Kingfisher */,
+				57AF352629422DF400C11047 /* AWSS3StoragePlugin */,
 			);
 			productName = "Product Marketplace";
 			productReference = 57AF307E2940F98D00C11047 /* Product Marketplace.app */;
@@ -244,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF352D2944A7CA00C11047 /* Product+Schema.swift in Sources */,
 				57AF34F9294210E300C11047 /* SessionView.swift in Sources */,
 				57AF351E294221DB00C11047 /*  Source+Extensions.swift .swift in Sources */,
 				57AF34FF2942151E00C11047 /* AvatarView.swift in Sources */,
+				57AF363229462E1A00C11047 /* GetAndUploadPhotos.swift in Sources */,
 				57AF34F52942102C00C11047 /* UserState.swift in Sources */,
 				57AF30992940FC4600C11047 /* SignUpView.swift in Sources */,
 				57AF34542941FF3A00C11047 /* User+Schema.swift in Sources */,
@@ -261,7 +278,9 @@
 				57AF351C294221C600C11047 /*  KFImage+Extensions.swift .swift in Sources */,
 				57AF30822940F98D00C11047 /* Product_MarketplaceApp.swift in Sources */,
 				57AF351A294221B000C11047 /*  AmplifyImageProvider.swift .swift in Sources */,
+				57AF352C2944A7CA00C11047 /* Product.swift in Sources */,
 				57AF34552941FF3A00C11047 /* AmplifyModels.swift in Sources */,
+				57AF352929422E9C00C11047 /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +411,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Product Marketplace/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Gallery access required to provide photos to upload.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -420,6 +440,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Product Marketplace/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Gallery access required to provide photos to upload.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -500,6 +521,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 57AF351F2942221900C11047 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		57AF352629422DF400C11047 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57AF350829421A7700C11047 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

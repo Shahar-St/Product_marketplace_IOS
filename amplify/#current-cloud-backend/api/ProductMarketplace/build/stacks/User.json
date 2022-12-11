@@ -43,19 +43,37 @@
     "referencetotransformerrootstackGraphQLAPI20497F53ApiId": {
       "Type": "String"
     },
-    "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name": {
-      "Type": "String"
-    },
     "referencetotransformerrootstackS3DeploymentBucket7592718ARef": {
       "Type": "String"
     },
     "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref": {
       "Type": "String"
     },
+    "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductauth0FunctionQuerygetProductauth0FunctionAppSyncFunctionC4F1BBF5FunctionId": {
+      "Type": "String"
+    },
+    "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId": {
+      "Type": "String"
+    },
     "referencetotransformerrootstackauthRoleNameFB872D50Ref": {
       "Type": "String"
     },
     "referencetotransformerrootstackunauthRoleName49F3C1FERef": {
+      "Type": "String"
+    },
+    "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductMutationcreateProductinit0FunctionMutationcreateProductinit0FunctionAppSyncFunction109BB99AFunctionId": {
+      "Type": "String"
+    },
+    "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductMutationcreateProductauth0FunctionMutationcreateProductauth0FunctionAppSyncFunction0C28C477FunctionId": {
+      "Type": "String"
+    },
+    "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductMutationupdateProductinit0FunctionMutationupdateProductinit0FunctionAppSyncFunction7C00EBDEFunctionId": {
+      "Type": "String"
+    },
+    "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptiononCreateProductauth0FunctionSubscriptiononCreateProductauth0FunctionAppSyncFunctionB32E208EFunctionId": {
+      "Type": "String"
+    },
+    "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptionOnCreateProductDataResolverFnSubscriptionOnCreateProductDataResolverFnAppSyncFunctionF8648FE1FunctionId": {
       "Type": "String"
     }
   },
@@ -426,66 +444,6 @@
         "UserIAMRole93CEE926"
       ]
     },
-    "QuerygetUserauth0FunctionQuerygetUserauth0FunctionAppSyncFunction9E6250B0": {
-      "Type": "AWS::AppSync::FunctionConfiguration",
-      "Properties": {
-        "ApiId": {
-          "Ref": "referencetotransformerrootstackGraphQLAPI20497F53ApiId"
-        },
-        "DataSourceName": {
-          "Ref": "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name"
-        },
-        "FunctionVersion": "2018-05-29",
-        "Name": "QuerygetUserauth0Function",
-        "RequestMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Query.getUser.auth.1.req.vtl"
-            ]
-          ]
-        },
-        "ResponseMappingTemplate": "$util.toJson({})"
-      }
-    },
-    "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60": {
-      "Type": "AWS::AppSync::FunctionConfiguration",
-      "Properties": {
-        "ApiId": {
-          "Ref": "referencetotransformerrootstackGraphQLAPI20497F53ApiId"
-        },
-        "DataSourceName": {
-          "Ref": "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name"
-        },
-        "FunctionVersion": "2018-05-29",
-        "Name": "QuerygetUserpostAuth0Function",
-        "RequestMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Query.getUser.postAuth.1.req.vtl"
-            ]
-          ]
-        },
-        "ResponseMappingTemplate": "$util.toJson({})"
-      }
-    },
     "QueryGetUserDataResolverFnQueryGetUserDataResolverFnAppSyncFunction36A3E4CF": {
       "Type": "AWS::AppSync::FunctionConfiguration",
       "Properties": {
@@ -553,16 +511,10 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "QuerygetUserauth0FunctionQuerygetUserauth0FunctionAppSyncFunction9E6250B0",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductauth0FunctionQuerygetProductauth0FunctionAppSyncFunctionC4F1BBF5FunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
               "Fn::GetAtt": [
@@ -674,16 +626,10 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "QuerygetUserauth0FunctionQuerygetUserauth0FunctionAppSyncFunction9E6250B0",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductauth0FunctionQuerygetProductauth0FunctionAppSyncFunctionC4F1BBF5FunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
               "Fn::GetAtt": [
@@ -795,16 +741,10 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "QuerygetUserauth0FunctionQuerygetUserauth0FunctionAppSyncFunction9E6250B0",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductauth0FunctionQuerygetProductauth0FunctionAppSyncFunctionC4F1BBF5FunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
               "Fn::GetAtt": [
@@ -847,66 +787,6 @@
           ]
         },
         "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)"
-      }
-    },
-    "MutationcreateUserinit0FunctionMutationcreateUserinit0FunctionAppSyncFunctionEDF87EC6": {
-      "Type": "AWS::AppSync::FunctionConfiguration",
-      "Properties": {
-        "ApiId": {
-          "Ref": "referencetotransformerrootstackGraphQLAPI20497F53ApiId"
-        },
-        "DataSourceName": {
-          "Ref": "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name"
-        },
-        "FunctionVersion": "2018-05-29",
-        "Name": "MutationcreateUserinit0Function",
-        "RequestMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Mutation.createUser.init.1.req.vtl"
-            ]
-          ]
-        },
-        "ResponseMappingTemplate": "$util.toJson({})"
-      }
-    },
-    "MutationcreateUserauth0FunctionMutationcreateUserauth0FunctionAppSyncFunction30556A6C": {
-      "Type": "AWS::AppSync::FunctionConfiguration",
-      "Properties": {
-        "ApiId": {
-          "Ref": "referencetotransformerrootstackGraphQLAPI20497F53ApiId"
-        },
-        "DataSourceName": {
-          "Ref": "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name"
-        },
-        "FunctionVersion": "2018-05-29",
-        "Name": "MutationcreateUserauth0Function",
-        "RequestMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Mutation.createUser.auth.1.req.vtl"
-            ]
-          ]
-        },
-        "ResponseMappingTemplate": "$util.toJson({})"
       }
     },
     "MutationCreateUserDataResolverFnMutationCreateUserDataResolverFnAppSyncFunction22E7974E": {
@@ -976,22 +856,13 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "MutationcreateUserinit0FunctionMutationcreateUserinit0FunctionAppSyncFunctionEDF87EC6",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductMutationcreateProductinit0FunctionMutationcreateProductinit0FunctionAppSyncFunction109BB99AFunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "MutationcreateUserauth0FunctionMutationcreateUserauth0FunctionAppSyncFunction30556A6C",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductMutationcreateProductauth0FunctionMutationcreateProductauth0FunctionAppSyncFunction0C28C477FunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
               "Fn::GetAtt": [
@@ -1034,36 +905,6 @@
           ]
         },
         "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)"
-      }
-    },
-    "MutationupdateUserinit0FunctionMutationupdateUserinit0FunctionAppSyncFunctionC2E8A924": {
-      "Type": "AWS::AppSync::FunctionConfiguration",
-      "Properties": {
-        "ApiId": {
-          "Ref": "referencetotransformerrootstackGraphQLAPI20497F53ApiId"
-        },
-        "DataSourceName": {
-          "Ref": "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name"
-        },
-        "FunctionVersion": "2018-05-29",
-        "Name": "MutationupdateUserinit0Function",
-        "RequestMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Mutation.updateUser.init.1.req.vtl"
-            ]
-          ]
-        },
-        "ResponseMappingTemplate": "$util.toJson({})"
       }
     },
     "MutationupdateUserauth0FunctionMutationupdateUserauth0FunctionAppSyncFunctionDF95DA65": {
@@ -1184,10 +1025,7 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "MutationupdateUserinit0FunctionMutationupdateUserinit0FunctionAppSyncFunctionC2E8A924",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductMutationupdateProductinit0FunctionMutationupdateProductinit0FunctionAppSyncFunction7C00EBDEFunctionId"
             },
             {
               "Fn::GetAtt": [
@@ -1196,10 +1034,7 @@
               ]
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
               "Fn::GetAtt": [
@@ -1368,10 +1203,7 @@
               ]
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
               "Fn::GetAtt": [
@@ -1416,81 +1248,6 @@
         "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)"
       }
     },
-    "SubscriptiononCreateUserauth0FunctionSubscriptiononCreateUserauth0FunctionAppSyncFunctionE9B4721A": {
-      "Type": "AWS::AppSync::FunctionConfiguration",
-      "Properties": {
-        "ApiId": {
-          "Ref": "referencetotransformerrootstackGraphQLAPI20497F53ApiId"
-        },
-        "DataSourceName": {
-          "Ref": "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name"
-        },
-        "FunctionVersion": "2018-05-29",
-        "Name": "SubscriptiononCreateUserauth0Function",
-        "RequestMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Subscription.onCreateUser.auth.1.req.vtl"
-            ]
-          ]
-        },
-        "ResponseMappingTemplate": "$util.toJson({})"
-      }
-    },
-    "SubscriptionOnCreateUserDataResolverFnSubscriptionOnCreateUserDataResolverFnAppSyncFunction23B2F1B9": {
-      "Type": "AWS::AppSync::FunctionConfiguration",
-      "Properties": {
-        "ApiId": {
-          "Ref": "referencetotransformerrootstackGraphQLAPI20497F53ApiId"
-        },
-        "DataSourceName": {
-          "Ref": "referencetotransformerrootstackGraphQLAPINONEDS2BA9D1C8Name"
-        },
-        "FunctionVersion": "2018-05-29",
-        "Name": "SubscriptionOnCreateUserDataResolverFn",
-        "RequestMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Subscription.onCreateUser.req.vtl"
-            ]
-          ]
-        },
-        "ResponseMappingTemplateS3Location": {
-          "Fn::Join": [
-            "",
-            [
-              "s3://",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentBucket7592718ARef"
-              },
-              "/",
-              {
-                "Ref": "referencetotransformerrootstackS3DeploymentRootKeyA71EA735Ref"
-              },
-              "/resolvers/Subscription.onCreateUser.res.vtl"
-            ]
-          ]
-        }
-      }
-    },
     "SubscriptiononCreateUserResolver": {
       "Type": "AWS::AppSync::Resolver",
       "Properties": {
@@ -1503,22 +1260,13 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "SubscriptiononCreateUserauth0FunctionSubscriptiononCreateUserauth0FunctionAppSyncFunctionE9B4721A",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptiononCreateProductauth0FunctionSubscriptiononCreateProductauth0FunctionAppSyncFunctionB32E208EFunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "SubscriptionOnCreateUserDataResolverFnSubscriptionOnCreateUserDataResolverFnAppSyncFunction23B2F1B9",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptionOnCreateProductDataResolverFnSubscriptionOnCreateProductDataResolverFnAppSyncFunctionF8648FE1FunctionId"
             }
           ]
         },
@@ -1565,22 +1313,13 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "SubscriptiononCreateUserauth0FunctionSubscriptiononCreateUserauth0FunctionAppSyncFunctionE9B4721A",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptiononCreateProductauth0FunctionSubscriptiononCreateProductauth0FunctionAppSyncFunctionB32E208EFunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "SubscriptionOnCreateUserDataResolverFnSubscriptionOnCreateUserDataResolverFnAppSyncFunction23B2F1B9",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptionOnCreateProductDataResolverFnSubscriptionOnCreateProductDataResolverFnAppSyncFunctionF8648FE1FunctionId"
             }
           ]
         },
@@ -1627,22 +1366,13 @@
         "PipelineConfig": {
           "Functions": [
             {
-              "Fn::GetAtt": [
-                "SubscriptiononCreateUserauth0FunctionSubscriptiononCreateUserauth0FunctionAppSyncFunctionE9B4721A",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptiononCreateProductauth0FunctionSubscriptiononCreateProductauth0FunctionAppSyncFunctionB32E208EFunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductQuerygetProductpostAuth0FunctionQuerygetProductpostAuth0FunctionAppSyncFunction74301376FunctionId"
             },
             {
-              "Fn::GetAtt": [
-                "SubscriptionOnCreateUserDataResolverFnSubscriptionOnCreateUserDataResolverFnAppSyncFunction23B2F1B9",
-                "FunctionId"
-              ]
+              "Ref": "referencetotransformerrootstackProductNestedStackProductNestedStackResource22231207OutputstransformerrootstackProductSubscriptionOnCreateProductDataResolverFnSubscriptionOnCreateProductDataResolverFnAppSyncFunctionF8648FE1FunctionId"
             }
           ]
         },
