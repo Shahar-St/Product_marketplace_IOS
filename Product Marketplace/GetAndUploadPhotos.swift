@@ -41,10 +41,9 @@ struct GetAndUploadPhotos: View {
             imageAsset.requestContentEditingInput(with: options, completionHandler: {(contentEditingInput, info) -> Void in
                 
                 // get metadata
-                guard let imageUrl = contentEditingInput!.fullSizeImageURL else {return}
-                guard let fullImage = CIImage(contentsOf: imageUrl) else {return}
-                guard let fileUrl = URL(string: "\(fileStringPrefix).txt") else {return}
-                let metadata = fullImage.properties.description
+                let fullImage = CIImage(contentsOf: contentEditingInput!.fullSizeImageURL!)
+                let fileUrl = URL(string: "\(fileStringPrefix).txt")!
+                let metadata = fullImage!.properties.description
                 do {
                     try metadata.write(to: fileUrl, atomically: true, encoding: String.Encoding.utf8)
                 } catch {
@@ -52,18 +51,18 @@ struct GetAndUploadPhotos: View {
                 }
             })
             
+            // get images
             imageManager.requestImageDataAndOrientation(for: imageAsset, options: requestOptions, resultHandler: {(imageData, dataUTI, orientation, info) -> Void in
-                if let imageData {
-                    guard let jpegImage = UIImage(data: imageData)?.jpegData(compressionQuality: 1) else {return}
-                    guard let fileUrl = URL(string: "\(fileStringPrefix).jpeg") else {return}
-                    do {
-                        try jpegImage.write(to: fileUrl)
-                    } catch {
-                        print(error)
-                    }
-                    var name : String = "\(imageId).jpeg"
-                    images[name] = jpegImage
+                let jpegImage = UIImage(data: imageData!)!.jpegData(compressionQuality: 1)
+                let fileUrl = URL(string: "\(fileStringPrefix).jpeg")!
+                do {
+                    try jpegImage!.write(to: fileUrl)
+                } catch {
+                    print(error)
                 }
+                var name : String = "\(imageId).jpeg"
+                images[name] = jpegImage
+                
                 count += 1
             })
         }
